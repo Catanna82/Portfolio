@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Merriweather:ital@0;1&family=Work+Sans:wght@800&display=swap');
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.5;
+}
+body {
+    margin: 0 200px;
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgb(235, 222, 206);
+}
+
+h1{
+    flex-basis: 45%;
+}
+
+h1, nav,  .about {
+    margin: 0 20px; 
+}
+
+.header-nav-ul {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header-nav-ul-li {
+    text-decoration: none;
+    list-style: none;    
+    margin-left: 20px;
+}
+
+.header-nav-ul-li a {
+    text-decoration: none;
+    color: black;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(244, 235, 224);
+    margin: 0;
+    padding: 20px 0 32px 40px;
+}
+
+.about-h2 {
+    width: 100%;
+    font-size: 2em;
+}
+
+.about-p {
+    flex-basis: 70%;
+    text-align: justify;
+}
+
+.img-container {
+    width: 300px;
+    height: auto;
+    flex-basis: 20%;
+    margin-top: 10px;
+}
+
+.img-container img{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    border: 2px solid black;
+    align-items: flex-end;
+    margin-left: 41px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(235, 228, 219);
+
+}
+
+.projects-a-jt, .projects-a-git {
+    text-decoration: none;
+    color: black;
+}
+
+.projects-a-jt{
+    margin-left: 250px;
+}
+
+.projects-a-git {
+    margin-right: 250px;
+}
+
+.projects-a-jt:hover, .projects-a-git:hover {
+    color: blue;
+}
+
+.projects-h2, .projects-p-text {
+    width: 100%;
+    text-align: center;
+}
+
+i {
+    font-size: 2em;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(235, 228, 219);
+    padding: 25px 0 50px 0;
+}
+.skills-h2 {
+width: 100%;
+text-align: center;
+font-size: 2em;
+background-color: rgb(235, 228, 219);
+padding-bottom: 40px 0;
+}
+
+.skills-div {
+    font-size: 2em;
+    width: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px 40px 50px;
+}
+
+.fab, .fa-brands {
+    font-family: "Font Awesome 5 Brands", serif;
+    padding: 0 2px;
+}
+
+.fa, .fab, .fa-brands {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+main {
+    background-color: rgb(235, 228, 219);
+}
+#contact {
+    height: 69vh;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    align-items: center;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-h2 {
+    margin: 0;
+    font-size: 2em;
+    padding: 50px 0;
+}
+
+.contact-p {
+    padding: 25px 0;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+
+#contact-container a {
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    color: black;
+}
+
+.fb:hover i{
+    color: blue;
+}
+
+.insta:hover i{
+    color: darkorchid;
+}
+
+.git:hover i{
+    color: rgb(66, 66, 71);
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(149 114 70 / 38%);
+}
+
+.heart {
+    color:red;
+}
+@media only screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+    }
+}
